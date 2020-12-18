@@ -1,13 +1,8 @@
-# money-analysis
-Using machine learning to defeat criminals who try to print their own currency
-
 Machine Learning to detect counterfeit bills
 ======================
-<>[![Total Downloads](https://poser.pugx.org/aimeos/aimeos-typo3/d/total.svg)](https://packagist.org/packages/aimeos/aimeos-typo3)
-<>[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aimeos/aimeos-typo3/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aimeos/aimeos-<>typo3/?branch=master)
-<>[![License](https://poser.pugx.org/aimeos/aimeos-typo3/license.svg)](https://packagist.org/packages/aimeos/aimeos-typo3)
+Using machine learning to defeat criminals who try to print their own currency
 
-:star: Star us on GitHub — it helps!
+:star: Star me on GitHub — it helps!
 
 ## Table of content
 
@@ -17,11 +12,7 @@ Machine Learning to detect counterfeit bills
     - [Install system-wide via a package manager](install-system-wide-via-a-package-manager)
         -[Ubuntu](#ubuntu)
         -[Mac](#mac)
-- [Running](#running)
-    - [Upload the page tree file](#upload-the-page-tree-file)
-    - [Go to the import view](#go-to-the-import-view)
-    - [Import the page tree](#import-the-page-tree)
-    - [SEO-friendly URLs](#seo-friendly-urls)
+- [Solution](#solution)
 - [License](#license)
 - [Links](#links)
 
@@ -39,22 +30,28 @@ The columns in the database are:
 This project uses Scipy as it's primary library to solve Machine Learning tasks. 
 ### Installing via pip
 You can install packages via the command line by entering:
-`python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
-`
+```python
+python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
+```
 ### Install system-wide via a package manager
 System package managers can install the most common Python packages. They install packages for the entire computer, often use older versions, and don’t have as many available versions.
 #### Ubuntu
 using apt-get:
-`sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-`
+```
+sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+```
 #### Mac
 Homebrew has an incomplete coverage of the SciPy ecosystem, but does install these packages:
-`brew install numpy scipy ipython jupyter
-`
+```
+brew install numpy scipy ipython jupyter
+```
 
 ## Solution
 proj1_A.py statistically analyzes the data and finds out the correlation of each variable. The input file (‘data_banknote_authentication.txt') was read using pandas package and analyzed for covariance and correlation. The covariance and correlation matrix was printed to the console. A heat-map figure for visualization purposes was also displayed along with a pair-plot of each variable (dependent and independent). From careful analysis it can be inferred with confidence that **variance, skewness, curtosis and entropy** are **most correlated** in that order with dependent variable class. Also among independent variables **curtosis and skewness were most correlated followed by entropy-skewness, curtosis-variance, entropy-curtosis, entropy-variance and skewness-variance is the least correlated pair among the independent variables**. The covariance results show a trend highlighting **curtosis-skewness pair having the highest covariance followed by entropy-skewness, curtosis-variance, skewness-variance, entropy-curtosis, entropy-variance**. Based on the aforementioned analysis , since entropy is least correlated to class we can drop it and thus variance, skewness and curtosis are potential candidates to predict the class but since curtosis is highly correlated with skewness so only variance and skewness are left as the best candidates to represent dependent variables.
 
+![Pair Plot]<img src="images/pair_plot.png" width="820" height="500" />
+
+![Heat Map]<img src="images/heatmap.png" width="820" height="500" />
 proj2_A.py uses:
 * Percepetron
 * Logistic Regression
@@ -64,7 +61,7 @@ proj2_A.py uses:
 * K-Nearest Neighbor
 
 All ML algorithms follow the following function structure:
-```
+```python
     def support_vector_machine(self,verbose=0):
         param_grid = [{'C': [0.1,1.0,5.0,10.0,20.0]}]                       # optimizing over C
         svm = SVC(kernel='linear',random_state=0)
