@@ -49,9 +49,9 @@ brew install numpy scipy ipython jupyter
 ## Solution
 proj1_A.py statistically analyzes the data and finds out the correlation of each variable. The input file (‘data_banknote_authentication.txt') was read using pandas package and analyzed for covariance and correlation. The covariance and correlation matrix was printed to the console. A heat-map figure for visualization purposes was also displayed along with a pair-plot of each variable (dependent and independent). From careful analysis it can be inferred with confidence that **variance, skewness, curtosis and entropy** are **most correlated** in that order with dependent variable class. Also among independent variables **curtosis and skewness were most correlated followed by entropy-skewness, curtosis-variance, entropy-curtosis, entropy-variance and skewness-variance is the least correlated pair among the independent variables**. The covariance results show a trend highlighting **curtosis-skewness pair having the highest covariance followed by entropy-skewness, curtosis-variance, skewness-variance, entropy-curtosis, entropy-variance**. Based on the aforementioned analysis , since entropy is least correlated to class we can drop it and thus variance, skewness and curtosis are potential candidates to predict the class but since curtosis is highly correlated with skewness so only variance and skewness are left as the best candidates to represent dependent variables.
 
-![Pair Plot]<img src="images/pair_plot.png" width="820" height="500" />
+<img src="images/pair_plot.png" width="820" height="500" />
 
-![Heat Map]<img src="images/heatmap.png" width="820" height="500" />
+<img src="images/heatmap.png" width="820" height="500" />
 proj2_A.py uses:
 * Percepetron
 * Logistic Regression
@@ -92,8 +92,8 @@ Best on the table above one can observe that KNN gives us the highest accuracy w
 
 
 ## License
-
+MIT License
 
 
 ## Links
-
+**[Website](http://http://gautam-sharma1.github.io)
