@@ -54,12 +54,12 @@ proj1_A.py statistically analyzes the data and finds out the correlation of each
 <img src="images/heatmap.png" width="820" height="500" />
 proj2_A.py uses:
 
-:green_circle: Percepetron
-:green_circle: Logistic Regression
-:green_circle: Support Vector Machine
-:green_circle: Decision Tree Learning
-:green_circle: Random Forest
-:green_circle: K-Nearest Neighbor
+:green_circle: Percepetron <br/>
+:green_circle: Logistic Regression <br/>
+:green_circle: Support Vector Machine <br/>
+:green_circle: Decision Tree Learning <br/>
+:green_circle: Random Forest <br/>
+:green_circle: K-Nearest Neighbor <br/>
 
 All ML algorithms follow the following function structure:
 ```python
@@ -94,5 +94,5 @@ MIT License
 
 ## Links
 
-:eight_spoked_asterisk: [Website](http://http://gautam-sharma1.github.io)
+:eight_spoked_asterisk: [Website](http://http://gautam-sharma1.github.io) <br/>
 :eight_spoked_asterisk: [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
