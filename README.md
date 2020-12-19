@@ -21,7 +21,7 @@ Using machine learning to defeat criminals who try to print their own currency
 You work for the Acme Money Analysis and Prediction Enterprises (AMAPE for short). As engineers for this company you are developing an app for the U.S. Treasury to aid in detection of counterfeit bills. You will be supplied with a data set which provides four features per bill and whether that bill was genuine or counterfeit.
 You have been assigned to development AMAPE’s official prediction model which will be used by anybody who accepts cash.
 As with any problem you first want to study the data.
-Read in the database given in the problem. It is in the CSV file data_banknote_authentication.txt provided to you. You may want to use panda read_csv which places the data in a dataframe, similar to, but not to be confused with, a dictionary. This data set contains observations based on measurements made on a number of bills. The last column is whether the bill is genuine (1) or counterfeit (0). Based on the measurements, you need to build a predictor to determine whether a bill is genuine or counterfeit.
+Read in the database given in the problem. It is in the CSV file **data_banknote_authentication.txt** provided to you. You may want to use panda read_csv which places the data in a dataframe, similar to, but not to be confused with, a dictionary. This data set contains observations based on measurements made on a number of bills. The last column is whether the bill is genuine (1) or counterfeit (0). Based on the measurements, you need to build a predictor to determine whether a bill is genuine or counterfeit.
 The columns in the database are:
 1. variance of Wavelet Transformed image (continuous) 2. skewness of Wavelet Transformed image (continuous) 3. curtosis of Wavelet Transformed image (continuous) 4. entropy of image (continuous)
 5. class (integer)
@@ -93,5 +93,6 @@ MIT License
 
 
 ## Links
-**[Website](http://http://gautam-sharma1.github.io)
-**[LinkedIn](https://www.linkedin.com/in/gautamsharm/)
+
+** [Website](http://http://gautam-sharma1.github.io)
+** [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
