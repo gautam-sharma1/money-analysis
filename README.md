@@ -53,6 +53,7 @@ proj1_A.py statistically analyzes the data and finds out the correlation of each
 
 <img src="images/heatmap.png" width="820" height="500" />
 proj2_A.py uses:
+
 * Percepetron
 * Logistic Regression
 * Support Vector Machine
