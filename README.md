@@ -30,24 +30,24 @@ The columns in the database are:
 This project uses Scipy as it's primary library to solve Machine Learning tasks. 
 ### Installing via pip
 You can install packages via the command line by entering:
-```python
+```bash
 python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 ```
 ### Install system-wide via a package manager
 System package managers can install the most common Python packages. They install packages for the entire computer, often use older versions, and don’t have as many available versions.
 #### Ubuntu
 using apt-get:
-```
+```bash
 sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 ```
 #### Mac
 Homebrew has an incomplete coverage of the SciPy ecosystem, but does install these packages:
-```
+```bash
 brew install numpy scipy ipython jupyter
 ```
 
 ## Solution
-proj1_A.py statistically analyzes the data and finds out the correlation of each variable. The input file (‘data_banknote_authentication.txt') was read using pandas package and analyzed for covariance and correlation. The covariance and correlation matrix was printed to the console. A heat-map figure for visualization purposes was also displayed along with a pair-plot of each variable (dependent and independent). From careful analysis it can be inferred with confidence that **variance, skewness, curtosis and entropy** are **most correlated** in that order with dependent variable class. Also among independent variables **curtosis and skewness were most correlated followed by entropy-skewness, curtosis-variance, entropy-curtosis, entropy-variance and skewness-variance is the least correlated pair among the independent variables**. The covariance results show a trend highlighting **curtosis-skewness pair having the highest covariance followed by entropy-skewness, curtosis-variance, skewness-variance, entropy-curtosis, entropy-variance**. Based on the aforementioned analysis , since entropy is least correlated to class we can drop it and thus variance, skewness and curtosis are potential candidates to predict the class but since curtosis is highly correlated with skewness so only variance and skewness are left as the best candidates to represent dependent variables.
+proj1_A.py statistically analyzes the data and finds out the correlation of each variable. The input file (**‘data_banknote_authentication.txt'**) was read using pandas package and analyzed for covariance and correlation. The covariance and correlation matrix was printed to the console. A heat-map figure for visualization purposes was also displayed along with a pair-plot of each variable (dependent and independent). From careful analysis it can be inferred with confidence that **variance, skewness, curtosis and entropy** are **most correlated** in that order with dependent variable class. Also among independent variables **curtosis and skewness were most correlated followed by entropy-skewness, curtosis-variance, entropy-curtosis, entropy-variance and skewness-variance is the least correlated pair among the independent variables**. The covariance results show a trend highlighting **curtosis-skewness pair having the highest covariance followed by entropy-skewness, curtosis-variance, skewness-variance, entropy-curtosis, entropy-variance**. Based on the aforementioned analysis , since entropy is least correlated to class we can drop it and thus variance, skewness and curtosis are potential candidates to predict the class but since curtosis is highly correlated with skewness so only variance and skewness are left as the best candidates to represent dependent variables.
 
 <img src="images/pair_plot.png" width="600" height="500" />
 
@@ -88,13 +88,10 @@ For each machine learning method used the best values for parameters is as follo
 Best on the table above one can observe that KNN gives us the highest accuracy with 10 neighbors and a euclidean distance metric. To get this result I have used GridSearchCV in my program (proj1_B.py) to run different ML algorithm for different parameters and get the best parameters in return. Training set has been set to 70% and test set to be 30%. A cross validation set of 5 is chosen in the GridSearchCV parameters. 
 
 
-
-
-
-
 ## License
 MIT License
 
 
 ## Links
 **[Website](http://http://gautam-sharma1.github.io)
+**[LinkedIn](https://www.linkedin.com/in/gautamsharm/)
