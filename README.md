@@ -94,5 +94,5 @@ MIT License
 
 ## Links
 
-** [Website](http://http://gautam-sharma1.github.io)
-** [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
+* [Website](http://http://gautam-sharma1.github.io)
+* [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
