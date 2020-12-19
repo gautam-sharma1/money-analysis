@@ -1,6 +1,6 @@
 Machine Learning to detect counterfeit bills :dollar:
 ======================
-Using machine learning to defeat criminals who try to print their own currency
+> Using machine learning to defeat criminals who try to print their own currency
 
 :star: Star me on GitHub — it helps!
 
@@ -27,7 +27,7 @@ The columns in the database are:
 5. class (integer)
 
 ## Installation
-This project uses Scipy as it's primary library to solve Machine Learning tasks. 
+> This project uses Scipy as it's primary library to solve Machine Learning tasks. 
 ### Installing via pip
 You can install packages via the command line by entering:
 ```bash
