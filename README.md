@@ -1,4 +1,4 @@
-Machine Learning to detect counterfeit bills
+Machine Learning to detect counterfeit bills :dollar:
 ======================
 Using machine learning to defeat criminals who try to print their own currency
 
@@ -54,12 +54,12 @@ proj1_A.py statistically analyzes the data and finds out the correlation of each
 <img src="images/heatmap.png" width="820" height="500" />
 proj2_A.py uses:
 
-* Percepetron
-* Logistic Regression
-* Support Vector Machine
-* Decision Tree Learning
-* Random Forest
-* K-Nearest Neighbor
+:green_circle: Percepetron
+:green_circle: Logistic Regression
+:green_circle: Support Vector Machine
+:green_circle: Decision Tree Learning
+:green_circle: Random Forest
+:green_circle: K-Nearest Neighbor
 
 All ML algorithms follow the following function structure:
 ```python
@@ -94,5 +94,5 @@ MIT License
 
 ## Links
 
-* [Website](http://http://gautam-sharma1.github.io)
-* [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
+:eight_spoked_asterisk: [Website](http://http://gautam-sharma1.github.io)
+:eight_spoked_asterisk: [LinkedIn](https://www.linkedin.com/in/gautamsharm/)
